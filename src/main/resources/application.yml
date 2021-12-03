@@ -1,0 +1,15 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: demo
+  cloud:
+    function:
+      definition: pack|label
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: functions
